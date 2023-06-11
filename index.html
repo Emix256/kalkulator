@@ -87,69 +87,38 @@ document.getElementById("rowna").onclick = function(){
     }
     if(y=="÷" && z=="0")
     {
-
     document.getElementById("wynik").innerHTML = "error";
-
     }
-
     if(y=="+" && z=="0" || y=="-" && z=="0")
-
     {
-
     document.getElementById("wynik").innerHTML = x;
-
     }
-
 }
 
-    
-
 document.getElementById("zero").onclick = function(){
-
     if(kolejne==true && z!="0")
-
     {
-
     z+="0"
-
     document.getElementById("liczba2").innerHTML = z;
-
     }
-
     if(kolejne==false && x!="0")
-
     {
-
     x+="0"
-
     document.getElementById("liczba").innerHTML = x;
-
     }
-
 }
 
 document.getElementById("jeden").onclick = function(){
-
     if(kolejne==true)
-
     {
-
     z+="1"
-
     document.getElementById("liczba2").innerHTML = z;
-
     }
-
     else
-
     {
-
     x+="1"
-
     document.getElementById("liczba").innerHTML = x;
-
     }
-
 }
 
 document.getElementById("dwa").onclick = function(){
@@ -344,7 +313,7 @@ document.getElementById("dziewiec").onclick = function(){
 
 } 
 
-document.getElementById("plus").onclick =  function(){
+document.getElementById("plus").onclick = function(){
 
     y="+"
 
