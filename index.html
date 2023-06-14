@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Witaj na mojej stronce2.1!</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id=wyswietlacz>
+        <label id=liczba>0</label>
+        <label id=znak></label>
+        <label id=liczba2></label>
+        <label id=rownanie></label>
+        <label id=wynik></label>
+    </div><br>
+    <div id=box1>
+        <button id=zero>0</label>
+        <button id=jeden>1</label>
+        <button id=dwa>2</label>
+        <button id=trzy>3</label>
+        <button id=cztery>4</label>
+        <button id=piec>5</label>
+        <button id=szesc>6</label>
+        <button id=siedem>7</label>
+        <button id=osiem>8</label>
+        <button id=dziewiec>9</label>
+        <button id=rowna>=</label>
+        <button id=plus>+</label>
+        <button id=minus>–</label>
+        <button id=mnozenie>×</label>
+        <button id=dzielenie>÷</label>
+    </div><br>
+    <div id=box2>
+        <button id=reset>Reset</label>
+    </div>
+<script scr="javascript">
+let x="";
+let y="";
+let z="";
+let v="";
+let kolejne=false;
+
+document.getElementById("reset").onclick = function(){
+    x=""
+    y=""
+    z=""
+    v=""
+    kolejne=false
+    document.getElementById("liczba").innerHTML = "0";
+    document.getElementById("znak").innerHTML = y;
+    document.getElementById("liczba2").innerHTML = z;
+    document.getElementById("rownanie").innerHTML = "";
+    document.getElementById("wynik").innerHTML = "";
+}
+
+document.getElementById("rowna").onclick = function(){
+    if(z!="")
+    {
+    x=Number(x)
+    z=Number(z)
+    document.getElementById("rownanie").innerHTML = "=";
+    }
+    if(y=="+" && z!="")
+    {
+    v=x+z
+    document.getElementById("wynik").innerHTML = v;
+    }
+    if(y=="-" && z!="")
+    {
+    v=x-z
+    document.getElementById("wynik").innerHTML = v;
+    }
+    if(y=="×" && z!="")
+    {
+    v=x*z
+    document.getElementById("wynik").innerHTML = v;
+    }
+    if(y=="÷" && z!="")
+    {
+    v=x/z
+    document.getElementById("wynik").innerHTML = v;
+    }
+    if(y=="×" && z=="0")
+    {
+    document.getElementById("wynik").innerHTML = 0;
+    }
+    if(y=="÷" && z=="0")
+    {
+    document.getElementById("wynik").innerHTML = "error";
+    }
+    if(y=="+" && z=="0" || y=="-" && z=="0")
+    {
+    document.getElementById("wynik").innerHTML = x;
+    }
+}
+
+document.getElementById("zero").onclick = function(){
+    if(kolejne==true && z!="0")
+    {
+    z+="0"
+    document.getElementById("liczba2").innerHTML = z;
+    }
+    if(kolejne==false && x!="0")
+    {
+    x+="0"
+    document.getElementById("liczba").innerHTML = x;
+    }
+}
+
+liczby("jeden", "1");
+liczby("dwa", "2");
+liczby("trzy", "3");
+liczby("cztery", "4");
+liczby("piec", "5");
+liczby("szesc", "6");
+liczby("siedem", "7");
+liczby("osiem", "8");
+liczby("dziewiec", "9");
+
+function liczby(dane, licz){
+    document.getElementById(dane).onclick = function(){
+        if(kolejne==true)
+        {
+        z+=licz
+        document.getElementById("liczba2").innerHTML = z;
+        }
+    	else
+    	{
+    	x+=licz
+    	document.getElementById("liczba").innerHTML = x;
+    	}
+    }
+}
+
+znaki("plus", "+");
+znaki("minus", "-");
+znaki("mnozenie", "×");
+znaki("dzielenie", "÷");
+
+function znaki(zn, spzn){
+    document.getElementById(zn).onclick = function(){
+        y=spzn
+	kolejne=true
+	document.getElementById("znak").innerHTML = y;
+    }
+}
+</script>
+</body>
+</html>
