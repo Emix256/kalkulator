@@ -1,0 +1,240 @@
+button {
+    background-color:black;
+    color:white;
+    border-color:white;
+}
+body {
+    background-image: url("tlo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+#wyswietlacz {
+    position: relative;
+    padding:10px;
+    width:1000px;
+    height:100px;
+    background: linear-gradient(white, black);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    color:black;
+    font-size:40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#prz {
+    position: relative;
+}
+#liczba {
+    position: relative;
+}
+#gora {
+    position: relative;
+    bottom:15px;
+    font-size:25px;
+}
+#znak {
+    position: relative;
+}
+#prz2 {
+    position: relative;
+}
+#liczba2 {
+    position: relative;   
+}
+#gora2 {
+    position: relative;
+    bottom:15px;
+    font-size:25px;
+}
+#rownanie {
+    position: relative;
+    left:3px;
+}
+#wynik {
+    position: relative;
+}
+#po {
+    position: relative;
+    right:5px;
+    bottom:3px;
+}
+#box1 {
+    position: relative;
+    width:480px;
+    height:300px;
+    background:black;
+    text-align: center;
+    border-radius:25px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#zero {
+    position: absolute;
+    left:130px;
+    top:230px;
+    width:45px;
+    height:45px;
+    border-radius:50px;
+    font-size:25px;
+}
+#jeden {
+    position: absolute;
+    left:40px;
+    top:20px;
+    width:45px;
+    height:45px;
+    border-radius:50px;
+    font-size:25px;
+}
+#dwa {
+    position: absolute;
+    left:130px;
+    top:20px;
+    width:45px;
+    height:45px;
+    border-radius:50px;
+    font-size:25px;
+}
+#trzy {
+    position: absolute;
+    left:220px;
+    top:20px;
+    width:45px;
+    height:45px;
+    border-radius:50px;
+    font-size:25px;
+}
+#cztery {
+    position: absolute;
+    left:40px;
+    top:90px;
+    width:45px;
+    height:45px;
+    border-radius:50px;
+    font-size:25px;
+}
+#piec {
+    position: absolute;
+    left:130px;
+    top:90px;
+    width:45px;
+    height:45px;
+    border-radius:50px;
+    font-size:25px;
+} 
+#szesc {
+    position: absolute;
+    left:220px;
+    top:90px;
+    width:45px;
+    height:45px;
+    border-radius:50px;
+    font-size:25px;
+}
+#siedem {
+    position: absolute;
+    left:40px;
+    top:160px;
+    width:45px;
+    height:45px;
+    border-radius:50px;
+    font-size:25px;
+}
+#osiem {
+    position: absolute;
+    left:130px;
+    top:160px;
+    width:45px;
+    height:45px;
+    border-radius:50px;
+    font-size:25px;
+}
+#dziewiec {
+    position: absolute;
+    left:220px;
+    top:160px;
+    width:45px;
+    height:45px;
+    border-radius:50px;
+    font-size:25px;
+}
+#rowna {
+    position: absolute;
+    left:220px;
+    top:230px;
+    width:45px;
+    height:45px;
+    border-radius:50px;
+    font-size:25px;
+}
+#plus {
+    position: absolute;
+    left:310px;
+    top:20px;
+    width:45px;
+    height:45px;
+    border-radius:50px;
+    font-size:25px;
+}
+#minus {
+    position: absolute;
+    left:310px;
+    top:90px;
+    width:45px;
+    height:45px;
+    border-radius:50px;
+    font-size:25px;
+}
+#mnozenie {
+    position: absolute;
+    left:310px;
+    top:160px;
+    width:45px;
+    height:45px;
+    border-radius:50px;
+    font-size:25px;
+}
+#dzielenie {
+    position: absolute;
+    left:310px;
+    top:230px;
+    width:45px;
+    height:45px;
+    border-radius:50px;
+    font-size:25px;
+}
+#potega {
+    position: absolute;
+    left:400px;
+    top:90px;
+    width:45px;
+    height:45px;
+    border-radius:50px;
+    font-size:25px;
+}
+#pierwiastek {
+    position: absolute;
+    left:400px;
+    top:160px;
+    width:45px;
+    height:45px;
+    border-radius:50px;
+    font-size:25px;
+}
+#przecinek {
+    position: absolute;
+    left:40px;
+    top:230px;
+    width:45px;
+    height:45px;
+    border-radius:50px;
+    font-size:25px;
+}
+#box2 {
+    text-align: center;
+}
+#reset {
+    border-radius:50px;
+}
