@@ -76,8 +76,8 @@ document.getElementById("rowna").onclick = function(){
     {
     nast=true
     x=Number(x)
-    addtoid("rowananie", "=");
     addtoid("wynik", x);
+    addtoid("rownanie", "=");
     }
     if(klj==true && nstp==false)
     {
